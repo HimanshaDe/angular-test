@@ -1,19 +1,31 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule, routes } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { provideState, provideStore, StoreModule } from '@ngrx/store';
+import { counterReducer } from './state/counter/counter.reducer';
+import { CounterComponent } from './counter/counter.component';
+import { provideAnimations } from '@angular/platform-browser/animations';
+import { provideRouter } from '@angular/router';
+import { provideHttpClient, withFetch } from '@angular/common/http';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
-  ],
+    AppRoutingModule,
+    StoreModule.forRoot({ counter: counterReducer }),
+],
   providers: [
-    provideClientHydration()
+    provideRouter(routes),
+    provideClientHydration(),
+    provideAnimations(),
+    provideHttpClient(withFetch()),
+    provideStore(),
+    provideState({ name: 'counter', reducer: counterReducer })
   ],
   bootstrap: [AppComponent]
 })
