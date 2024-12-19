@@ -1,0 +1,64 @@
+{
+  "employees": [
+    {
+      "firstName": "Chathuka",
+      "lastName": "Fernando",
+      "email": "chathuka@gmail.cm",
+      "dob": "1998-11-20",
+      "gender": "male",
+      "education": "Post Graduate",
+      "company": "allianz",
+      "experience": "2",
+      "package": "20000",
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "firstName": "Himansh",
+      "lastName": "Nawarathna",
+      "email": "himansha@gmail.cm",
+      "dob": "1997-04-13",
+      "gender": "female",
+      "education": " Graduate",
+      "company": "allianz",
+      "experience": "2",
+      "package": "20000"
+    },
+    {
+      "id": "3",
+      "firstName": "Amara",
+      "lastName": "Perera",
+      "email": "amara.perera@gmail.com",
+      "dob": "1998-05-12T18:30:00.000Z",
+      "gender": "female",
+      "education": "Postgraduate",
+      "company": "Dialog",
+      "experience": "5",
+      "package": "45000"
+    },
+    {
+      "id": "4",
+      "firstName": "Kamal",
+      "lastName": "Fernando",
+      "email": "kamal.fernando@yahoo.com",
+      "dob": "1990-08-22T18:30:00.000Z",
+      "gender": "male",
+      "education": "Undergraduate",
+      "company": "Virtusa",
+      "experience": "8",
+      "package": "75000"
+    },
+    {
+      "id": "5",
+      "firstName": "Sandeep",
+      "lastName": "Rathnayake",
+      "email": "sandeep.rathnayake@hotmail.com",
+      "dob": "1985-11-15T18:30:00.000Z",
+      "gender": "male",
+      "education": "Diploma",
+      "company": "HNB",
+      "experience": "10",
+      "package": "60000"
+    }
+  ]
+}
